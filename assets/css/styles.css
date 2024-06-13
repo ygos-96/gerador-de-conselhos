@@ -1,0 +1,105 @@
+body {
+    background-color: var(--cor-do-fundo);
+    font-family: var(--font-family);
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .cartao {
+    background-color: var(--cor-do-card);
+    height: 300px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.main .cartao .informacoes {
+    text-align: center;
+    margin-top: 30px;
+    height: 60%;
+}
+
+.main .cartao .informacoes .txt-top {
+    color: var(--cor-botao-texto-top);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.main .cartao .informacoes P {
+    margin: 40px auto;
+    width: 90%;
+    color: var(--cor-do-texto);
+}
+
+.divisao {
+    height: 18px;
+    width: 90%;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.divisao .div-reta {
+    background-color: var(--cor-do-texto);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+
+}
+
+.divisao .div-em-pe {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    right: 46%;
+    width: 30px;
+    background-color: var(--cor-do-card);
+}
+
+.divisao .traco1 {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height: 15px;
+    border-radius: 20px;
+    width: 5px;
+    background-color: var(--cor-do-texto);
+}
+
+.divisao .traco2 {
+    position: absolute;
+    top: 0;
+    right: 60%;
+    height: 15px;
+    border-radius: 20px;
+    width: 5px;
+    background-color: var(--cor-do-texto);
+}
+
+.main .cartao .btn-gerar {
+    position: absolute;
+    bottom: -25px;
+    background-color: var(--cor-botao-texto-top);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+@media(max-width:500px) {
+    .main .cartao {
+        max-width: 90%;
+    }
+
+    .divisao .div-em-pe {
+        right: 45%;
+    }
+}
